@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   background: #F4F5F7;
   position: relative;
@@ -11,7 +11,7 @@
 }
 a:link { text-decoration: none; }
 
-.p-img{
+.p-img {
   margin-left: auto;
   margin-right: auto;
   width: 88px;
@@ -26,30 +26,43 @@ a:link { text-decoration: none; }
   flex: none;
   order: 0;
   flex-grow: 0;
-z-index: 0;
+  z-index: 0;
 }
-.p-name{
-width: 1030px;
-height: 30px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 30px;
-text-align: center;
-color: #101828;
-flex: none;
-order: 0;
-flex-grow: 1;
+.p-name {
+  width: 100%;
+  height: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #101828;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
 }
-button{
+.share-btn {
+  /*position: absolute;*/
+  height: 20px;
+  left: 800px;
+  bottom: 100px;
+  border: 2px solid #D0D5DD;
+  border-radius: 50px;
+  fill: white;
+  cursor: pointer;
+}
+.m-share-btn {
+  display: none;
+}
+button {
   box-sizing: border-box;
   display: block;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 24px 32px;
-  width: 1000px;
+  width: 100%;
   height: 76px;
   background: #EAECF0;
   border: 1px solid #98A2B3;
@@ -65,7 +78,7 @@ button:hover {
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
 }
-.twitter_link{
+.twitter_link {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
@@ -79,7 +92,7 @@ button:hover {
   flex-grow: 0;
   cursor: pointer;
 }
-.twitter_link:hover{
+.twitter_link:hover {
   color: #fff;
 }
 #btn__zuri{
@@ -96,7 +109,7 @@ button:hover {
   flex-grow: 0;
   cursor: pointer;
 }
-#btn__zuri:hover{
+#btn__zuri:hover {
   color: #fff;
 }
 #books{
@@ -113,10 +126,10 @@ button:hover {
   flex-grow: 0;
   cursor: pointer;
 }
-#books:hover{
+#books:hover {
   color: #fff;
 }
-#book_python{
+#book_python {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
@@ -130,7 +143,7 @@ button:hover {
   flex-grow: 0;
   cursor: pointer;
 }
-#book_python:hover{
+#book_python:hover {
   color: #fff;
 }
 #pitch{
@@ -147,10 +160,10 @@ button:hover {
   flex-grow: 0;
   cursor: pointer;
 }
-#pitch:hover{
+#pitch:hover {
   color:#fff
 }
-#book__design{
+#book__design {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
@@ -158,38 +171,81 @@ button:hover {
   line-height: auto;
   align-items: center;
   text-align: center;
-  color: #101828;
-  flex: none;
-  order: 0;
   flex-grow: 0;
   cursor: pointer;
 }
-#book__design:hover{
+#book__design:hover {
   color: #fff;
 }
-.icons{
+.icons {
   display: flex;
   flex-direction: column;
   align-items: center;
   width:100%;
   height: 72px;
-  width: 1216px;
   height: 72px;
-
 }
 
-.slck-icon{
+.slck-icon {
   height: 24px;
-  width: 24px;
-  left: 200px;
-  top: 0px;
-  border-radius: 0px;
-
+  width: 40%;
+  left: 500%;
 }
-.github-icon{
+.github-icon {
   height: 24px;
-  width: 24px;
-  right: 250px;
-  top: 0px;
-  border-radius: 0px;
+  width: 40%;
+  right: 400%;
 }  
+
+.footer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0px 0px;
+  gap: 35px;
+  flex: none;
+  width: 100%;
+  order: 0;
+  flex-grow: 0;
+}
+.ing-icon {
+  mix-blend-mode: multiply;
+  height: 30px;
+}
+.intern {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #667085;
+}
+.zuri-icon {
+  height: 120px;
+}
+
+@media only screen and (max-width: 1150px) {
+  .footer, .icons, .share-btn {
+    display: none;
+  }
+  * {
+    height: 100%;
+    padding: 5px;
+  }
+  .m-share-btn {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    height: 10%;
+    right: -5%;
+    top: -2%;
+    border-radius: 20px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    z-index: 2;
+  }
+}

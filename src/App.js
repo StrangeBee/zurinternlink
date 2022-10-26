@@ -1,12 +1,20 @@
-import './App.css'
-import  github  from './icons/github.png'
-import slack from './icons/slack-logo-icon.png'
+import './App.css';
+import  github  from './icons/github.png';
+import slack from './icons/slack-logo-icon.png';
+import zuri from './icons/zuri-internship-img.svg';
+import ing from './icons/Ing.png';
+import me from './img/profile.jpg';
+import share from './icons/share-solid.svg';
+import Mshare from './icons/m-share-btn.svg'
 
 function App() {
   return (
     <div className="container">
-      <img src='' className='p-img' id='profile__img'/>
+      <img src={me} className='p-img' id='profile__img' alt=''/>
       <p className='p-name'> Oduola Benfico</p>
+
+      <img src={share} className='share-btn' />
+      <img src={Mshare} className='m-share-btn' />
 
       <div className='section'>
         <a href="https://www.twitter.com/oduolabenfico">
@@ -28,15 +36,16 @@ function App() {
           <button id='book__design'>Design Books</button>
         </a>
         <div className='icons'>
-          <a href=''><img src={slack} className='slck-icon' /></a>
-          <a href=''><img src={github} className='github-icon' /></a>
+          <a href=''><img src={slack} className='slck-icon' alt=''/></a>
+          <a href=''><img src={github} className='github-icon'  alt=''/></a>
         </div>
      </div>
 
-     
-
-     <div className='Footer'></div>
-    
+      <div className='footer'>
+        <img src={zuri} className="zuri-icon"  alt=''/>
+        <p className="intern">HNG Internship 9 Frontend Task</p>
+        <img src={ing} className="ing-icon" alt='' />
+      </div>
     </div>
   );
 }
