@@ -11,7 +11,8 @@ function App() {
   return (
     <div className="container">
       <img src={me} className='p-img' id='profile__img' alt=''/>
-      <p className='p-name'> Oduola Benfico</p>
+      <p className='p-name' id='twitter' handle='@oduolabenfico'> Oduola Benfico</p>
+      {/*<p className='p-name' id='slack' email='oduolatemmy@gmail.com'> Beneze </p>*/}
 
       <img src={share} className='share-btn' />
       <img src={Mshare} className='m-share-btn' />
