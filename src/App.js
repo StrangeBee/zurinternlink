@@ -6,6 +6,8 @@ import ing from './icons/Ing.png';
 import me from './img/profile.jpg';
 import share from './icons/share-solid.svg';
 import Mshare from './icons/m-share-btn.svg';
+import {BrowserRoute as Router, Link, Switch} from "react-router-dom";
+
 
 function App() {
   return (
@@ -36,6 +38,11 @@ function App() {
         <a href="https://books.zuri.team/design-rules" id='book__design'>
           Design Books
         </a>
+        <Switch>
+          <Link to="/contact" id="contact"> 
+          Contact
+         </Link>
+       </Switch>
      </div>
      <div className='icons'>
           <img src={slack} className='slck-icon' alt=''/>
