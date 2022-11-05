@@ -36,7 +36,7 @@ function App() {
         <a href="https://books.zuri.team/design-rules" id='book__design'>
           Design Books
         </a>
-        <Link to="/contact" id='book__design'>
+        <Link to="/contact" id='contact'>
           Contact Us
         </Link>
       </div>
