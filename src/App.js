@@ -37,7 +37,7 @@ function App() {
           Design Books
         </a>
         <Link to="/contact" id='contact'>
-          Contact Us
+          Contact Me
         </Link>
       </div>
       <div className='icons'>
